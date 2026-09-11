@@ -134,19 +134,14 @@ export const references: Reference[] = [
     faculty: 'Faculty of Computing',
     organization: 'Universiti Teknologi Malaysia',
     email: 'hiewmoi@utm.my',
-    context: 'Research / academic supervisor associated with my iris-recognition research.',
   },
   {
-    // TODO: Replace name and position with the exact professional reference details.
-    // TODO: Confirm organization; the bank is supplied in the brief.
-    // TODO: Add the confirmed email and phone (if needed). Keep this entry SECOND.
-    name: 'Professional Reference',
-    position: 'Technical / professional supervisor',
-    organization: 'Dhaka Mercantile Co-operative Bank Ltd.',
-    email: null,
+    // Keep this entry SECOND.
+    name: 'Mohammed Ziaul Hoque Zilani',
+    position: 'Head of IT',
+    organization: 'The Dhaka Mercantile Co-operative Bank Ltd. (DMCB)',
+    email: 'zia.zilani@dmcbl.com',
     phone: null,
-    context:
-      'Contact details to be added. Reference for software architecture, banking systems, and enterprise software engineering.',
   },
   {
     name: 'Dr. Ruhaidah binti Samsudin',

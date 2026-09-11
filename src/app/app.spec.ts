@@ -14,7 +14,7 @@ describe('Academic portfolio', () => {
     expect(page.querySelector('h1')?.textContent).toBe('Saad Kabir Uddin');
     expect(
       Array.from(page.querySelectorAll('#references h3'), (el) => el.textContent?.trim()),
-    ).toEqual(['Dr. Sim Hiew Moi', 'Professional Reference', 'Dr. Ruhaidah binti Samsudin']);
+    ).toEqual(['Dr. Sim Hiew Moi', 'Mohammed Ziaul Hoque Zilani', 'Dr. Ruhaidah binti Samsudin']);
     expect(page.querySelectorAll('#publications article')).toHaveLength(2);
   });
 
