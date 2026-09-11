@@ -1,24 +1,29 @@
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
 
-describe('App', () => {
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [App],
-    })
-      .compileComponents();
-  });
-
-  it('should create the app', () => {
-    const fixture = TestBed.createComponent(App);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
-  });
-
-  it('should render title', async () => {
+describe('Academic portfolio', () => {
+  async function render() {
+    await TestBed.configureTestingModule({ imports: [App] }).compileComponents();
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, saad-academic');
+    return fixture.nativeElement as HTMLElement;
+  }
+
+  it('renders the academic profile and required reference order', async () => {
+    const page = await render();
+    expect(page.querySelector('h1')?.textContent).toBe('Saad Kabir Uddin');
+    expect(
+      Array.from(page.querySelectorAll('#references h3'), (el) => el.textContent?.trim()),
+    ).toEqual(['Dr. Sim Hiew Moi', 'Professional Reference', 'Dr. Ruhaidah binti Samsudin']);
+    expect(page.querySelectorAll('#publications article')).toHaveLength(2);
+  });
+
+  it('resolves every section link and avoids a fabricated CV download', async () => {
+    const page = await render();
+    for (const anchor of page.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')) {
+      expect(page.querySelector(anchor.getAttribute('href')!)).not.toBeNull();
+    }
+    expect(page.querySelector('#cv a')?.getAttribute('href')).toContain('mailto:');
+    expect(page.querySelector('a[download]')).toBeNull();
   });
 });

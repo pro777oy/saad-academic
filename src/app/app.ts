@@ -1,12 +1,25 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import {
+  academicCvUrl,
+  contactLinks,
+  experience,
+  projects,
+  publications,
+  references,
+  skills,
+} from './portfolio.data';
 
 @Component({
-  imports: [RouterOutlet],
   selector: 'app-root',
-  styleUrl: './app.scss',
   templateUrl: './app.html',
+  styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('saad-academic');
+  protected readonly academicCvUrl = academicCvUrl;
+  protected readonly contactLinks = contactLinks;
+  protected readonly publications = publications;
+  protected readonly projects = projects;
+  protected readonly experience = experience;
+  protected readonly skills = skills;
+  protected readonly references = references;
 }
