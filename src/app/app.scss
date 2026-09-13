@@ -119,7 +119,21 @@ dd {
 .references {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 28px;
+  gap: 4px 28px;
+}
+.references article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.references h3,
+.references article > p {
+  margin: 0;
+}
+.reference-contact {
+  padding-top: 5px;
 }
 .references article + article {
   margin-top: 0;
@@ -171,6 +185,12 @@ footer {
   .references {
     grid-template-columns: 1fr;
     gap: 22px;
+  }
+  .references article {
+    display: block;
+  }
+  .references h3 {
+    margin-bottom: 4px;
   }
   .skills > div {
     grid-template-columns: 1fr;

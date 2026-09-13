@@ -238,19 +238,21 @@
               }
               {{ reference.organization }}
             </p>
-            @if (reference.email) {
-              <p>
-                <a [href]="'mailto:' + reference.email">{{ reference.email }}</a>
-              </p>
-            }
-            @if (reference.phone) {
-              <p>
-                <a [href]="'tel:' + reference.phone">{{ reference.phone }}</a>
-              </p>
-            }
-            @if (reference.context) {
-              <p class="context">{{ reference.context }}</p>
-            }
+            <div class="reference-contact">
+              @if (reference.email) {
+                <p>
+                  <a [href]="'mailto:' + reference.email">{{ reference.email }}</a>
+                </p>
+              }
+              @if (reference.phone) {
+                <p>
+                  <a [href]="'tel:' + reference.phone">{{ reference.phone }}</a>
+                </p>
+              }
+              @if (reference.context) {
+                <p class="context">{{ reference.context }}</p>
+              }
+            </div>
           </article>
         }
       </div>
