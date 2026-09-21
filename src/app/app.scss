@@ -119,13 +119,16 @@ dd {
 .references {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 4px 28px;
+  gap: 16px;
 }
 .references article {
   display: grid;
   grid-template-rows: subgrid;
   grid-row: span 3;
   min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
   overflow-wrap: anywhere;
 }
 .references h3,
