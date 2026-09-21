@@ -7,7 +7,6 @@
     <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
     <a href="#references">References</a>
-    <a href="#cv">CV</a>
     <div class="theme-control" role="group" aria-label="Color theme">
       <button
         type="button"
@@ -65,7 +64,7 @@
         >
         <a href="https://github.com/pro777oy">GitHub</a>
         <a href="https://www.linkedin.com/in/saadkabiruddin/">LinkedIn</a>
-        <a href="#cv">Academic CV</a>
+        <a href="https://orcid.org/0009-0005-3966-5020">ORCID</a>
       </div>
     </div>
   </header>
@@ -225,6 +224,13 @@
         >
       </article>
     </section>
+    <section id="language-proficiency">
+      <h2>Language Proficiency</h2>
+      <article>
+        <h3>English — IELTS</h3>
+        <p>Listening: 8.5 · Reading: 8.5 · Writing: 7 · Speaking: 6.5</p>
+      </article>
+    </section>
     <section id="references">
       <h2>References</h2>
       <div class="references">
@@ -258,20 +264,10 @@
       </div>
     </section>
     <section id="contact">
-      <h2>Contact / Academic CV</h2>
+      <h2>Contact</h2>
       <p>
         For research and academic enquiries:
         <a href="mailto:uddin.saadkabir@gmail.com">uddin.saadkabir@gmail.com</a>
-      </p>
-      <p id="cv">
-        @if (academicCvUrl) {
-          <a [href]="academicCvUrl" download>Download Academic CV (PDF)</a>
-        } @else {
-          <strong>Academic CV</strong> — PDF not yet available.
-          <a href="mailto:uddin.saadkabir@gmail.com?subject=Academic%20CV%20request"
-            >Request by email</a
-          >.
-        }
       </p>
       <div class="links">
         @for (link of contactLinks; track link.url) {

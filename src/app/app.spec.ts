@@ -18,12 +18,12 @@ describe('Academic portfolio', () => {
     expect(page.querySelectorAll('#publications article')).toHaveLength(2);
   });
 
-  it('resolves every section link and avoids a fabricated CV download', async () => {
+  it('resolves every section link without exposing a specialized CV', async () => {
     const page = await render();
     for (const anchor of page.querySelectorAll<HTMLAnchorElement>('a[href^="#"]')) {
       expect(page.querySelector(anchor.getAttribute('href')!)).not.toBeNull();
     }
-    expect(page.querySelector('#cv a')?.getAttribute('href')).toContain('mailto:');
     expect(page.querySelector('a[download]')).toBeNull();
+    expect(page.querySelector('a[href="#cv"]')).toBeNull();
   });
 });

@@ -12,11 +12,8 @@ export interface Reference {
   context?: string;
 }
 
-// TODO: Add the actual academic CV to public/ and set this to its relative path
-// (for example, 'academic-cv.pdf'). Do not use a leading slash: Pages uses a subpath.
-export const academicCvUrl: string | null = null;
-
 export const contactLinks: Link[] = [
+  { label: 'ORCID', url: 'https://orcid.org/0009-0005-3966-5020' },
   { label: 'Email', url: 'mailto:uddin.saadkabir@gmail.com' },
   { label: 'GitHub', url: 'https://github.com/pro777oy' },
   { label: 'LinkedIn', url: 'https://www.linkedin.com/in/saadkabiruddin/' },

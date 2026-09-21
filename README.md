@@ -42,5 +42,5 @@ Repeated content and links are in `src/app/portfolio.data.ts`; introductory, res
 
 Two items deliberately remain incomplete because their source details were not supplied:
 
-- **Academic CV:** add the actual PDF to `public/` and set `academicCvUrl` in `portfolio.data.ts` to its relative filename. Until then, the CV section offers an email request instead of a broken download.
+- **Academic CV:** specialized CVs are shared directly with recipients; do not place them in `public/` or add a public download option.
 - **Professional reference:** fill in the exact name, position, email, and optional phone in the second reference entry; confirm its organization. Source TODOs mark these fields. Keep exactly three references in the supplied order.

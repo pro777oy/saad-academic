@@ -9,7 +9,6 @@ import {
   viewChild,
 } from '@angular/core';
 import {
-  academicCvUrl,
   contactLinks,
   experience,
   projects,
@@ -57,7 +56,6 @@ export class App {
     }
   }
 
-  protected readonly academicCvUrl = academicCvUrl;
   protected readonly contactLinks = contactLinks;
   protected readonly publications = publications;
   protected readonly projects = projects;
