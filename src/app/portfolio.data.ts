@@ -108,7 +108,7 @@ export const experience = [
 
 export const skills = [
   {
-    category: 'Machine Learning / Computer Vision',
+    category: 'Machine Learning',
     items: 'PyTorch, OpenCV, scikit-learn, Albumentations, NumPy, Pandas, Matplotlib',
   },
   { category: 'Programming Languages', items: 'Python, C#, C++, JavaScript, TypeScript, Rust, Go' },
