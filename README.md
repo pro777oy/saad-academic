@@ -40,6 +40,4 @@ See [GitHub’s custom Pages workflow documentation](https://docs.github.com/en/
 
 Repeated content and links are in `src/app/portfolio.data.ts`; introductory, research, and education text is in `src/app/app.html`.
 
-One item deliberately remains incomplete because its source details were not supplied:
-
-- **Academic CV:** specialized CVs are shared directly with recipients; do not place them in `public/` or add a public download option.
+The site has no public CV download link. Share a CV directly with each recipient rather than placing it in `public/`.
