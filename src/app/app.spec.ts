@@ -9,12 +9,9 @@ describe('Academic portfolio', () => {
     return fixture.nativeElement as HTMLElement;
   }
 
-  it('renders the academic profile and required reference order', async () => {
+  it('renders the academic profile and publications', async () => {
     const page = await render();
     expect(page.querySelector('h1')?.textContent).toBe('Saad Kabir Uddin');
-    expect(
-      Array.from(page.querySelectorAll('#references h3'), (el) => el.textContent?.trim()),
-    ).toEqual(['Dr. Sim Hiew Moi', 'Mohammed Ziaul Hoque Zilani', 'Dr. Ruhaidah binti Samsudin']);
     expect(page.querySelectorAll('#publications article')).toHaveLength(2);
   });
 

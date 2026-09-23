@@ -116,38 +116,6 @@ dt {
 dd {
   margin: 0;
 }
-.references {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-}
-.references article {
-  display: grid;
-  grid-template-rows: subgrid;
-  grid-row: span 3;
-  min-width: 0;
-  padding: 18px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  overflow-wrap: anywhere;
-}
-.references h3,
-.references article > p {
-  margin: 0;
-}
-.reference-contact {
-  padding-top: 5px;
-}
-.references article + article {
-  margin-top: 0;
-}
-.references p {
-  font-size: 0.9rem;
-}
-.references .context {
-  margin-top: 9px;
-  color: var(--muted);
-}
 footer {
   border-top: 1px solid var(--border);
   padding: 20px 0 30px;
@@ -184,16 +152,6 @@ footer {
   }
   .entry-heading {
     display: block;
-  }
-  .references {
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-  .references article {
-    display: block;
-  }
-  .references h3 {
-    margin-bottom: 4px;
   }
   .skills > div {
     grid-template-columns: 1fr;

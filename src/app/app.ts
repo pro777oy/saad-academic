@@ -13,7 +13,6 @@ import {
   experience,
   projects,
   publications,
-  references,
   skills,
 } from './portfolio.data';
 
@@ -61,5 +60,4 @@ export class App {
   protected readonly projects = projects;
   protected readonly experience = experience;
   protected readonly skills = skills;
-  protected readonly references = references;
 }

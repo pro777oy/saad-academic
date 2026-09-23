@@ -6,7 +6,6 @@
     <a href="#education">Education</a>
     <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
-    <a href="#references">References</a>
     <div class="theme-control" role="group" aria-label="Color theme">
       <button
         type="button"
@@ -50,15 +49,13 @@
       <h1>Saad Kabir Uddin</h1>
       <p class="subtitle">Software Engineering · ML Systems · Computer Vision</p>
       <p>
-        I am a software engineer developing enterprise banking applications, with a Software
-        Engineering degree and published undergraduate research in iris recognition. My main research
-        direction is Software Engineering for AI (SE4AI): applying software engineering methods to
-        make ML-enabled applications reliable, testable, and practical to deploy and monitor.
+        I work as a software engineer on enterprise banking applications. During my Software
+        Engineering degree, I researched iris recognition and later published that work. For a PhD,
+        I want to study how to build ML-based software that can be tested, maintained, and used reliably.
       </p>
       <p>
-        I am seeking PhD opportunities in Software Engineering and Computer Vision, including work
-        that connects robust visual models with dependable software systems. AI for Software
-        Engineering (AI4SE) is also a research interest.
+        I am looking for PhD opportunities in Software Engineering and Computer Vision. I am also
+        interested in using AI to help developers test and improve software.
       </p>
       <div class="links">
         <a href="mailto:uddin.saadkabir@gmail.com">Email</a>
@@ -77,24 +74,23 @@
       <article>
         <h3>Software Engineering for AI (SE4AI) / ML Systems</h3>
         <p>
-          My primary direction is the reliability, testing, deployment, and monitoring of ML-enabled
-          software. I want to study how software architecture, MLOps, and model and version management
-          can support maintainable AI applications in real operating environments.
+          I want to study what it takes to keep ML-based applications working after they leave the
+          lab: testing them, deploying them, monitoring changes, and managing model versions.
         </p>
       </article>
       <article>
         <h3>Computer Vision / Robust Visual Systems</h3>
         <p>
-          My existing research focuses on iris recognition under difficult imaging conditions.
-          I remain interested in image segmentation, biometric recognition, and deep learning,
-          including how to evaluate robust visual models and integrate them into reliable applications.
+          My undergraduate work examined iris recognition when images are blurred, occluded, or
+          unevenly lit. I am interested in image segmentation and biometric recognition, including
+          how to evaluate these models when image quality varies.
         </p>
       </article>
       <article>
         <h3>AI for Software Engineering (AI4SE)</h3>
         <p>
-          I am also interested in using AI, machine learning, and large language
-          models to support software testing, bug detection, fault localization, and program repair.
+          I would like to explore how AI tools can help with software testing, bug detection,
+          fault localization, and program repair.
         </p>
       </article>
     </section>
@@ -146,20 +142,17 @@
           >
         </p>
         <p>
-          Investigated iris recognition under difficult imaging conditions, including blur,
-          occlusion, illumination variation, and degraded iris imagery.
+          Studied iris recognition when images were blurred, occluded, or unevenly lit.
         </p>
         <ul>
           <li>
-            Reviewed literature on iris recognition, biometric systems, computer vision, image
-            processing, and preprocessing.
+            Read work on iris recognition, biometrics, image processing, and computer vision.
           </li>
           <li>
             Worked with iris-image datasets, image preprocessing, and iris segmentation experiments.
           </li>
           <li>
-            Compared experimental approaches and results for recognition under degraded imaging
-            conditions.
+            Compared results under different image degradations.
           </li>
         </ul>
         <p>
@@ -249,38 +242,6 @@
         <h3>English — IELTS</h3>
         <p>Overall: 7.5 · Listening: 8.5 · Reading: 8.5 · Writing: 7 · Speaking: 6.5</p>
       </article>
-    </section>
-    <section id="references">
-      <h2>References</h2>
-      <div class="references">
-        @for (reference of references; track reference.name) {
-          <article>
-            <h3>{{ reference.name }}</h3>
-            <p>
-              {{ reference.position }}<br />
-              @if (reference.faculty) {
-                {{ reference.faculty }}<br />
-              }
-              {{ reference.organization }}
-            </p>
-            <div class="reference-contact">
-              @if (reference.email) {
-                <p>
-                  <a [href]="'mailto:' + reference.email">{{ reference.email }}</a>
-                </p>
-              }
-              @if (reference.phone) {
-                <p>
-                  <a [href]="'tel:' + reference.phone">{{ reference.phone }}</a>
-                </p>
-              }
-              @if (reference.context) {
-                <p class="context">{{ reference.context }}</p>
-              }
-            </div>
-          </article>
-        }
-      </div>
     </section>
     <section id="contact">
       <h2>Contact</h2>
