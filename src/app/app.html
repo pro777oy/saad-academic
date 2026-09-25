@@ -127,6 +127,28 @@
           </div>
         </article>
       }
+      <h3>Under Review</h3>
+      @for (publication of underReviewPublications; track publication.title) {
+        <article>
+          <h3>{{ publication.title }}</h3>
+          <p>
+            @for (author of publication.authors; track author; let last = $last) {
+              <span>
+                @if (author === 'Saad Kabir Uddin') {
+                  <strong>{{ author }}</strong>
+                } @else {
+                  {{ author }}
+                }
+                @if (!last) {
+                  ,
+                }
+              </span>
+            }
+          </p>
+          <p><cite>{{ publication.venue }}</cite></p>
+          <p class="secondary">{{ publication.status }}</p>
+        </article>
+      }
     </section>
     <section id="research-experience">
       <h2>Research Experience</h2>
