@@ -202,7 +202,7 @@
       </article>
     </section>
     <section id="projects">
-      <h2>Selected Research / Machine Learning Projects</h2>
+      <h2>Selected Projects</h2>
       @for (project of projects; track project.title) {
         <article>
           <h3>{{ project.title }}</h3>
@@ -210,9 +210,14 @@
           <p>{{ project.details }}</p>
           <p class="secondary">{{ project.technologies }}</p>
           <div class="links">
-            <a [href]="project.notebook" [attr.aria-label]="'Colab notebook: ' + project.title"
-              >Colab notebook</a
-            >
+            @if (project.notebook) {
+              <a [href]="project.notebook" [attr.aria-label]="'Colab notebook: ' + project.title"
+                >Colab notebook</a
+              >
+            }
+            @for (link of project.links ?? []; track link.url) {
+              <a [href]="link.url" [attr.aria-label]="link.label + ': ' + project.title">{{ link.label }}</a>
+            }
           </div>
         </article>
       }

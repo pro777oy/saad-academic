@@ -79,6 +79,18 @@ export const projects = [
     notebook:
       'https://colab.research.google.com/drive/1YXZuQIgNnTpWguKGgcrKjSUxn4CH6LLv?usp=drive_link',
   },
+  {
+    title: 'DeliveryDash',
+    description:
+      'Implemented player controls, collision-based interactions, delivery mechanics, and game-state logic in Unity and C#.',
+    details:
+      'Built and deployed the completed game as a Unity WebGL application through GitHub Pages.',
+    technologies: 'Unity 2D, C#',
+    links: [
+      { label: 'GitHub', url: 'https://github.com/pro777oy/DeliveryDash' },
+      { label: 'Live Demo', url: 'https://pro777oy.github.io/DeliveryDash/' },
+    ],
+  },
 ];
 
 export const experience = [
