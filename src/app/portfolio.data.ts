@@ -60,6 +60,14 @@ export const underReviewPublications = [
 
 export const projects = [
   {
+    title: 'RecWiz / Reconciliation Wizard',
+    description:
+      'Built a reconciliation application with an ASP.NET Core Web API and Angular.',
+    details:
+      'Used CQRS, MediatR, and EF Core to organize backend processing and data access; added JWT authentication, configurable source ingestion, batch processing, and record comparison.',
+    technologies: 'ASP.NET Core Web API, Angular, CQRS, MediatR, EF Core, JWT',
+  },
+  {
     title: 'Deep Learning Image Segmentation with PyTorch',
     description:
       'Built a semantic segmentation pipeline with U-Net and an EfficientNet-B0 encoder.',
@@ -103,10 +111,10 @@ export const experience = [
   },
   {
     organization: 'Itransition',
-    position: 'Intern .NET Developer — Training Program · Remote',
+    position: '.NET Development Training Program · Remote',
     period: 'September 2024 – October 2024',
     description:
-      'Built C# authentication features with password hashing and salting, JWT, and session management. Connected Angular components to backend workflows and MySQL.',
+      'Built C# authentication features with password hashing and salting, JWT, and session management. Connected Angular components to backend workflows.',
   },
   {
     organization: 'BigLedger Sdn Bhd',
@@ -118,16 +126,16 @@ export const experience = [
 ];
 
 export const skills = [
-  {
-    category: 'Machine Learning',
-    items: 'PyTorch, OpenCV, scikit-learn, Albumentations, NumPy, Pandas, Matplotlib',
-  },
   { category: 'Programming Languages', items: 'Python, C#, C++, JavaScript, TypeScript, Rust, Go' },
   {
     category: 'Backend / Web',
     items: 'ASP.NET Core, ASP.NET MVC, ASP.NET Framework, Angular, HTML, CSS, JWT',
   },
-  { category: 'Databases', items: 'Microsoft SQL Server, PostgreSQL, MySQL' },
+  { category: 'Databases', items: 'Microsoft SQL Server, PostgreSQL' },
+  {
+    category: 'Machine Learning',
+    items: 'PyTorch, OpenCV, scikit-learn, Albumentations, NumPy, Pandas, Matplotlib',
+  },
   {
     category: 'Tools / Platforms',
     items:
