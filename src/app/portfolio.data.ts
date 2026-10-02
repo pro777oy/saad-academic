@@ -92,10 +92,10 @@ export const projects = [
 export const experience = [
   {
     organization: 'Dhaka Mercantile Co-operative Bank Ltd.',
-    position: 'Senior Technical Officer (Software Engineer)',
+    position: 'Software Engineer (Senior Technical Officer)',
     period: 'November 2024 – Present',
     description:
-      'I build enterprise applications with ASP.NET Core, ASP.NET MVC, and SQL Server. My work has included database design, transaction logic, reconciliation, authentication, and deploying a case management application.',
+      'My work includes Core Banking System transaction logic and data-integrity workflows. I designed the database schema and backend architecture for a case management application and developed and deployed it. I built Member Transfer and contributed to Cheque Book Management and reconciliation. I develop and maintain enterprise banking applications with C#, ASP.NET Core, ASP.NET MVC, Angular, and SQL Server, applying modular design and separation of concerns. I also contribute to Auth Gateway authentication, authorization, and identity workflows, alongside software reliability, data validation, access control, and production issue resolution.',
   },
   {
     organization: 'Itransition',
