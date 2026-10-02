@@ -9,7 +9,6 @@ import {
   viewChild,
 } from '@angular/core';
 import {
-  contactLinks,
   experience,
   projects,
   publications,
@@ -56,7 +55,6 @@ export class App {
     }
   }
 
-  protected readonly contactLinks = contactLinks;
   protected readonly publications = publications;
   protected readonly underReviewPublications = underReviewPublications;
   protected readonly projects = projects;

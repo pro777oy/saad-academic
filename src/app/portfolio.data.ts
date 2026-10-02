@@ -2,18 +2,6 @@ export interface Link {
   label: string;
   url: string;
 }
-export const contactLinks: Link[] = [
-  { label: 'ORCID', url: 'https://orcid.org/0009-0005-3966-5020' },
-  { label: 'Email', url: 'mailto:uddin.saadkabir@gmail.com' },
-  { label: 'GitHub', url: 'https://github.com/pro777oy' },
-  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/saadkabiruddin/' },
-  {
-    label: 'Google Scholar',
-    url: 'https://scholar.google.com/citations?user=wttp814AAAAJ&hl=en&authuser=1',
-  },
-  { label: 'Professional Portfolio', url: 'https://pro777oy.github.io/saad-portfolio/' },
-];
-
 export const publications = [
   {
     title: 'Improving the Methods of Iris Recognition In Less Cooperative Environments',
